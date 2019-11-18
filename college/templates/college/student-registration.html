@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+</head>
+<body>
+<h1>Student Registration Page</h1>
+<form method="post" action="." enctype="multipart/form-data">
+    {% csrf_token %}
+    User name: <input type="text" placeholder="enter user name" name="username"> <br><br>
+    F name: <input type="text" placeholder="enter Fname" name="first-name"> <br><br>
+    L name: <input type="text" placeholder="enter Lname" name="last-name"> <br><br>
+    e-mail: <input type="email" placeholder="example@gmail.com" name="email"><br><br>
+    password: <input type="password" placeholder="password" name="password" ><br><br>
+    father name : <input type="text" name="father-name" placeholder="father name"> <br><br>
+    mother name : <input type="text" name="mother-name" placeholder="mother name"> <br><br>
+    profile pic : <input type="file" name="profile-pic"  ><br><br>
+    gender : <select name="gender">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                <option value="O">Other</option>
+             </select><br><br>
+    department:<select name="department">
+
+                    <option value="TE">Telugu</option>
+                    <option value="EN">English</option>
+                    <option value="MA">MATHS</option>
+                    <option value="PH">PHYSICS</option>
+                    <option value="CS">COMPUTERS</option>
+                </select> <br><br>
+    nationality : <input type="text" name="nationality" placeholder="india"><br><br>
+<input type="submit" value="register">
+</form>
+</body>
+</html>

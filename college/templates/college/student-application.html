@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Application</title>
+</head>
+<body>
+<h1>Student Application Page</h1>
+<form action="." method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    Student name: <input type="text" name="student-name" placeholder="Student name"><br><br>
+    email: <input type="email" name="email" placeholder="email" ><br><br>
+    dob: <input type="date" name="dob" placeholder="date of birth" > <br><br>
+    ssc_doc: <input type="file" name="ssc-doc"><br><br>
+    inter_doc: <input type="file" name="inter-doc"><br><br>
+    <input type="submit" value="save">
+</form>
+
+</body>
+</html>
